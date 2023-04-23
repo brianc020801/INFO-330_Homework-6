@@ -1,2 +1,2 @@
-# INFO330-AccessDatabase
-A homework for my INFO 330 course
+# INFO330-AccessingDatabases
+A homework for my INFO 330 course.
