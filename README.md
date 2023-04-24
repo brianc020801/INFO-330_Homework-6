@@ -72,5 +72,5 @@ You are free to use either Python or Java for this assignment; a Python starter 
 
 
 ## Attributions
-<a href=https://www.pngmart.com/image/178453 target="_blank">Ash Ketchum PNG Clipart</a>
+Images are from <a href='https://www.pngmart.com' target="_blank">PNGMart</a>.
 
