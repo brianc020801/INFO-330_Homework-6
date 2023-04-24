@@ -36,44 +36,36 @@ Professor Oak sighed, and turned his attention back to the Python code in front 
 
 ## Goals
 
-You need to write some Java or Python code to access the SQLite Pokemon database in pokemon.db. Your program will help build out Pokemon teams, by helping trainers choose which Pokemon are good against which other kinds of Pokemon they face. An example session looks like this:
+You need to write some Java or Python code to access the SQLite Pokemon database in pokemon.db. Your program will help build out Pokemon teams, by helping trainers choose which Pokemon are good against which other kinds of Pokemon they face.
+
+This program must take a set of six command-line parameters, which will be Pokedex numbers, and analyze how well they do against all the different types of Pokemon. It will then ask the user if this team is worth saving, and if so, write the contents to the "teams" table. For example:
 
 ```
-$ java TeamBuilder
-Hello! What would you like to do:
-(B)uild a new team
---> B
-Excellent! What would you like to name this team?
---> Team SpaceX
-Very good! What kind of Pokemon will you be facing, Team SpaceX?:
-(B)ug, (G)rass, (F)ighting, F(L)ying, ...
---> B
-Hmm. It looks like the following Pokemon would be good against Bug:
-(1) Bulbasaur
-(2) Ivysaur
-(3) ...
-Which would you like to add to your team?
---> 1
-You now have a Bulbasaur on your team.
-Very good! What kind of Pokemon will you be facing, Team SpaceX?:
-(B)ug, (G)rass, (F)ighting, F(L)ying, ...
---> L
-Hmm. It looks like the following Pokemon would be good against Bug:
-(1) Pikachu
-(2) ...
-(3) ...
-Which would you like to add to your team?
---> 1
-You now have Bulbasaur, Pikachu on your team.
-Very good! What kind of Pokemon will you be facing, Team SpaceX?:
-(B)ug, (G)rass, (F)ighting, F(L)ying, ...
-...
-You now have Bulbasaur, Pikachu, Mew, Charizard, Meowth, Mewtwo on your team.
-Your team is now full! Would you like to save your team, (Y)es or (N)o?
---> Y
-Saved! Goodbye.
+% python3 TeamAnalyzer.py 1 2 3 4 5 6
+Analyzing 1
+Bulbasaur (grass poison) is strong against ['fire', 'flying', 'ice', 'psychic'] but weak against ['electric', 'fairy', 'fight', 'grass', 'water']
+Analyzing 2
+Ivysaur (grass poison) is strong against ['fire', 'flying', 'ice', 'psychic'] but weak against ['electric', 'fairy', 'fight', 'grass', 'water']
+Analyzing 3
+Venusaur (grass poison) is strong against ['fire', 'flying', 'ice', 'psychic'] but weak against ['electric', 'fairy', 'fight', 'grass', 'water']
+Analyzing 4
+Charmander (fire ) is strong against ['ground', 'rock', 'water'] but weak against ['bug', 'fairy', 'fire', 'grass', 'ice', 'steel']
+Analyzing 5
+Charmeleon (fire ) is strong against ['ground', 'rock', 'water'] but weak against ['bug', 'fairy', 'fire', 'grass', 'ice', 'steel']
+Analyzing 6
+Charizard (fire flying) is strong against ['electric', 'rock', 'water'] but weak against ['bug', 'fairy', 'fight', 'fire', 'grass', 'ground', 'steel']
+Would you like to save this team? (Y)es or (N)o: Y
+Enter the team name: Team SpaceX
+Saving Team SpaceX ...
 ```
 
-Must have a "trainers" table with a name column and six pokemon_id columns.
+A Pokemon is "good" against another type if its "against_" column is greater than 1; it is "weak" to that type if that column is less than 1.
 
+Note that this version of the Pokemon databases has a few views that you may find helpful.
+
+You are free to use either Python or Java for this assignment; a Python starter is in the Python directory, and a Java starter is in the Java directory. (Python is recommended.)
+
+## Extra credit
+
+* **Flexible input (1 pt):** Accept either Pokedex numbers *or* Pokemon names at the command line, so that `python3 TeamBuilder.py Bulbasaur Ivysaur Venusaur 4 5 6` works (and generates the same input as above).
 * 
