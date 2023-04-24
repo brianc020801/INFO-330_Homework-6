@@ -12,7 +12,7 @@ After Misty had managed to rebuild the relational database from the CSV file, Pr
 
 Thus, when Ash came by the next day, Professor Oak was in a pretty bad mood.
 
-![](Images/Ash-Ketchum-PNG-Clipart.png)
+![](Images/Ash-Ketchum.png)
 
 "Professor!" Ash could see Professor Oak was upset. "What's wrong?"
 
@@ -24,7 +24,8 @@ Thus, when Ash came by the next day, Professor Oak was in a pretty bad mood.
 
 "And a snake... Professor! It's Team Rocket! I'd recognize their Ekans anywhere!"
 
-![](https://bulbapedia.bulbagarden.net/wiki/File:0023Ekans.png)
+![](Images/Ekans.png)
+
 
 "But Ash, I--"
 
