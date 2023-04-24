@@ -6,13 +6,13 @@ In this homework assignment, you must write some code (either Python or Java) to
 
 Professor Oak had another problem.
 
-(Prof Oak pic)
+![](https://archives.bulbagarden.net/media/upload/1/17/Professor_Oak_BW_anime.png)
 
 After Misty had managed to rebuild the relational database from the CSV file, Professor Oak had restarted his research on some of the newest Pokemon discovered yet, the Huskychu and Cougarite. However, he was finding that working with the database directly was problematic--he kept making errors that violated the database's relational integrity constraints.
 
 Thus, when Ash came by the next day, Professor Oak was in a pretty bad mood.
 
-(Ash pic)
+![](Images/Ash-Ketchum-PNG-Clipart.png)
 
 "Professor!" Ash could see Professor Oak was upset. "What's wrong?"
 
@@ -24,7 +24,7 @@ Thus, when Ash came by the next day, Professor Oak was in a pretty bad mood.
 
 "And a snake... Professor! It's Team Rocket! I'd recognize their Ekans anywhere!"
 
-(Ekans pic)
+![](https://bulbapedia.bulbagarden.net/wiki/File:0023Ekans.png)
 
 "But Ash, I--"
 
@@ -68,4 +68,8 @@ You are free to use either Python or Java for this assignment; a Python starter 
 ## Extra credit
 
 * **Flexible input (1 pt):** Accept either Pokedex numbers *or* Pokemon names at the command line, so that `python3 TeamBuilder.py Bulbasaur Ivysaur Venusaur 4 5 6` works (and generates the same input as above).
-* 
+
+
+## Attributions
+<a href=https://www.pngmart.com/image/178453 target="_blank">Ash Ketchum PNG Clipart</a>
+
