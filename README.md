@@ -66,6 +66,8 @@ Note that this version of the Pokemon databases has a few views that you may fin
 
 You are free to use either Python or Java for this assignment; a Python starter is in the Python directory, and a Java starter is in the Java directory. (Python is recommended.)
 
+> **HINT (Java):** Remember, if you use Java, you must have the SQLite driver on the *classpath* when you run the code; use the following to make that happen: `java -classpath .:sqlite-jdbc-3.41.2.1.jar TeamAnalyzer` for macOS or Linux, `java -classpath .;sqlite-jdbc-3.41.2.1.jar TeamAnalyzer` for Windows. (You can also use the more modern `java -classpath sqlite-jdbc-3.41.2.1.jar TeamAnalyzer.java` and pretend Java is a source-interpreted language like Python, but doing so means you will have to learn how to use compiled code some other day.)
+
 ## Extra credit
 
 * **Flexible input (1 pt):** Accept either Pokedex numbers *or* Pokemon names at the command line, so that `python3 TeamBuilder.py Bulbasaur Ivysaur Venusaur 4 5 6` works (and generates the same input as above).
